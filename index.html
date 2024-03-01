@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex justify-center items-center font-sans w-full *:list-none h-[90vh] bg-gray-200 m-0 p-0"
+  >
+    <div
+      id="requst"
+      style="display: none"
+      class="backdrop-blur-sm w-[100%] z-[3] h-[100%] mt-[5%] absolute"
+    >
+      <div
+        class="ml-[35%] flex flex-col items-center w-[30%] mt-[4.5%] bg-white rounded-3xl h-[180px]"
+      >
+        <div
+          class="w-[100%] h-[20%] bg-gray-300 flex justify-between rounded-t-3xl items-center text-gray-600 p-6"
+        >
+          Add Todo
+          <img
+            id="DeletMyDivTodo"
+            class="cursor-pointer"
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios/50/000000/delete-sign--v3.png"
+            alt="delete-sign--v3"
+          />
+        </div>
+        <input
+          id="input-text"
+          class="w-[85%] h-[40px] mt-3 border-2 pl-5 rounded-sm shadow-md text-gray-400"
+          type="text"
+          placeholder="My Todo is . . . ."
+        />
+        <input
+          id="input-button"
+          class="w-[85%] h-[40px] mt-4 text-white bg-green-700 hover:bg-green-800 duration-200 rounded-sm"
+          type="button"
+          value="Add Todo"
+        />
+      </div>
+    </div>
+
+    <div id="continer" class="shadow-2xl w-[70%] bg-gray-500 h-[80%] flex">
+      <div
+        id="No-status"
+        class="w-[25%] h-[100%] bg-gray-300 items-center flex flex-col Switch"
+      >
+        <h1
+          class="w-[100%] h-[10%] bg-gray-800 border-r-2 border-gray-300 flex justify-center items-center text-white font-bold text-[1.8em] select-none"
+        >
+          No status
+        </h1>
+        <button
+          class="w-[93%] h-[8%] m-2 bg-gray-400 rounded-lg text-gray-700 font-semibold text-[1.3em] space-x-2 shadow-xl duration-200 hover:scale-[1.03]"
+        >
+          + Add Todo
+        </button>
+      </div>
+      <div
+        class="w-[25%] h-[100%] bg-gray-400 items-center flex flex-col Switch"
+      >
+        <h1
+          class="w-[100%] h-[10%] bg-gray-800 border-r-2 border-gray-300 flex justify-center items-center text-white font-bold text-[1.8em] select-none"
+        >
+          Not Started
+        </h1>
+      </div>
+      <div
+        class="w-[25%] h-[100%] bg-gray-300 items-center flex flex-col Switch"
+      >
+        <h1
+          class="w-[100%] h-[10%] bg-gray-800 border-r-2 border-gray-300 flex justify-center items-center text-white font-bold text-[1.8em] select-none"
+        >
+          In Progress
+        </h1>
+      </div>
+      <div
+        class="w-[25%] h-[100%] bg-gray-400 items-center flex flex-col Switch"
+      >
+        <h1
+          class="w-[100%] h-[10%] bg-gray-800 border-r-0 border-gray-300 flex justify-center items-center text-white font-bold text-[1.8em] select-none"
+        >
+          Completed
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
